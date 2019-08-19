@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:2ebc2e58-1d9b-4e73-8043-4f454a678e12 -->
+<!-- salt:baeaa9fa-e79a-47cd-ab55-3336ebbe5a8b -->
 <metadata name="LookupProduct" path="/shared/examples/LookupProduct" type="PROCEDURE" subtype="SQL_SCRIPT_PROCEDURE" changeToken="-8363706973618700287">
   <parameters>
     <parameter name="desiredProduct" direction="IN" nullable="true">
@@ -23,6 +23,34 @@
     <owner user="admin" domain="composite"/>
     <privilege group="all" domain="composite" privileges="READ EXECUTE"/>
   </security>
+  <dependency target="/shared/examples/ds_inventory/tutorial/products" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="productid" nullable="false">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="productname">
+        <datatype type="STRING" maxLength="50"/>
+      </element>
+      <element name="productdescription">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="categoryid">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="serialnumber">
+        <datatype type="STRING" maxLength="50"/>
+      </element>
+      <element name="unitprice">
+        <datatype type="DECIMAL" maxDigits="12" minFractionalDigits="2" maxFractionalDigits="2"/>
+      </element>
+      <element name="reorderlevel">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="leadtime">
+        <datatype type="STRING" maxLength="30"/>
+      </element>
+    </datatype>
+  </dependency>
   <attribute name="Script" type="STRING">PROCEDURE LookupProduct(
     IN desiredProduct INTEGER,
     OUT result CURSOR (
@@ -38,6 +66,7 @@ BEGIN
             products.ProductName,
             products.ProductID,
             products.ProductDescription
+
         FROM     
             /shared/examples/ds_inventory/tutorial/products products
         WHERE
@@ -54,10 +83,11 @@ END</attribute>
   <attribute name="creatorUserDomain" type="STRING"/>
   <attribute name="creatorUserName" type="STRING"/>
   <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
-  <attribute name="lastModifiedDate" type="LONG">1401221465456</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1566226471091</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
   <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
   <attribute name="license" type="NULL"/>
   <attribute name="model" type="NULL"/>
+  <attribute name="native_only" type="STRING">false</attribute>
   <attribute name="references" type="NULL"/>
 </metadata>
