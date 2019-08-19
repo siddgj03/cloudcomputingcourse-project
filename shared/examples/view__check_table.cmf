@@ -1,0 +1,32 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:2ebc2e58-1d9b-4e73-8043-4f454a678e12 -->
+<metadata name="view_check" path="/shared/examples/view_check" type="TABLE" subtype="SQL_TABLE" changeToken="-8363706973618700263" tableType="VIEW">
+  <columns>
+    <column name="AA" nullable="true">
+      <datatype type="STRING" minLength="45" maxLength="45" trailingSpaces="false"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="SQL" type="STRING">SELECT   
+&apos;MIX 2 VIALS PER MANUFACTURER&apos;&apos;S PACKAGE INSERT&apos; AA  FROM /services/databases/system/DUAL</attribute>
+  <attribute name="creationDate" type="LONG">1555356288855</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="impactLevel" type="INTEGER">0</attribute>
+  <attribute name="impactMessage" type="NULL"/>
+  <attribute name="lastModifiedDate" type="LONG">1555356323934</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1555356288855</attribute>
+</metadata>
