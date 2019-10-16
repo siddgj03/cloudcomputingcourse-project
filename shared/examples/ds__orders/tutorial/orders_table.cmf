@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:2ebc2e58-1d9b-4e73-8043-4f454a678e12 -->
+<!-- salt:668265b4-70c0-4e2f-aded-db5b945413ad -->
 <metadata name="orders" path="/shared/examples/ds_orders/tutorial/orders" type="TABLE" subtype="DATABASE_TABLE" changeToken="-8363706973618700263" tableType="TABLE">
   <columns>
     <column name="orderid" nullable="false">
@@ -102,51 +102,51 @@
   <foreignKeys></foreignKeys>
   <security>
     <owner user="admin" domain="composite"/>
-    <privilege group="all" domain="composite" privileges="READ SELECT"/>
+    <privilege group="all" domain="composite" privileges="NONE"/>
   </security>
-  <dependency target="/shared/examples/ds_orders" type="DATA_SOURCE">
+  <dependency target="/lib/sources/defaultCacheDataSource" type="DATA_SOURCE">
     <datatype name="Tree" type="TREE" refId="1"></datatype>
   </dependency>
-  <dependency target="/shared/examples/ds_orders/orders_cache0" type="TABLE">
+  <dependency target="/lib/sources/defaultCacheDataSource/ciscache/view17981_0" type="TABLE">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <dependency target="/lib/sources/defaultCacheDataSource/ciscache/view17981_1" type="TABLE">
     <datatype name="Tree" type="TREE" refId="1"></datatype>
   </dependency>
   <attribute name="cacheBucketMode" type="STRING">AUTO_GEN</attribute>
-  <attribute name="cacheBucketPrefix" type="STRING">orders_cache</attribute>
+  <attribute name="cacheBucketPrefix" type="STRING">view17981_</attribute>
+  <attribute name="cacheBucketSchema" type="STRING">ciscache</attribute>
   <attribute name="cacheClearRule" type="STRING">MANUAL</attribute>
   <attribute name="cacheConfigured" type="BOOLEAN">true</attribute>
   <attribute name="cacheDeltaLoader" type="NULL"/>
   <attribute name="cacheDropCreateIdx" type="BOOLEAN">true</attribute>
-  <attribute name="cacheEnabled" type="BOOLEAN">true</attribute>
+  <attribute name="cacheEnabled" type="BOOLEAN">false</attribute>
   <attribute name="cacheIncremental" type="BOOLEAN">false</attribute>
-  <attribute name="cacheLastTracking" type="STRING">/shared/examples/ds_orders/tutorial/cache_tracking</attribute>
-  <attribute name="cacheNumBuckets" type="INTEGER">3</attribute>
+  <attribute name="cacheLastTracking" type="STRING">/lib/sources/defaultCacheDataSource/ciscache/cstracking</attribute>
+  <attribute name="cacheNumBuckets" type="INTEGER">2</attribute>
   <attribute name="cachePostRefreshCallback" type="NULL"/>
   <attribute name="cachePreRefreshCallback" type="NULL"/>
   <attribute name="cachePullBasedIncremental" type="BOOLEAN">false</attribute>
   <attribute name="cacheRefreshMode" type="STRING">MANUAL</attribute>
   <attribute name="cacheSnapshotLoader" type="NULL"/>
-  <attribute name="cacheStorageSource" type="STRING">/shared/examples/ds_orders</attribute>
+  <attribute name="cacheStorageSource" type="STRING">/lib/sources/defaultCacheDataSource</attribute>
   <attribute name="cacheStorageTargets" type="MAP">
     <item>
       <key type="STRING">result</key>
-      <value type="STRING">/shared/examples/ds_orders/orders_cache0</value>
+      <value type="STRING">/lib/sources/defaultCacheDataSource/ciscache/view17981_0</value>
     </item>
     <item>
       <key type="STRING">result1</key>
-      <value type="STRING">/shared/examples/ds_orders/orders_cache1</value>
-    </item>
-    <item>
-      <key type="STRING">result2</key>
-      <value type="STRING">/shared/examples/ds_orders/orders_cache2</value>
+      <value type="STRING">/lib/sources/defaultCacheDataSource/ciscache/view17981_1</value>
     </item>
   </attribute>
   <attribute name="cacheStorageType" type="STRING">DATA_SOURCE_OTPS</attribute>
   <attribute name="creationDate" type="LONG">0</attribute>
   <attribute name="creatorUserDomain" type="STRING"/>
   <attribute name="creatorUserName" type="STRING"/>
-  <attribute name="impactLevel" type="INTEGER">8</attribute>
-  <attribute name="impactMessage" type="STRING">The resource &apos;/shared/examples/ds_orders/orders_cache0&apos; does not exist</attribute>
-  <attribute name="lastModifiedDate" type="LONG">1561142760770</attribute>
+  <attribute name="impactLevel" type="INTEGER">0</attribute>
+  <attribute name="impactMessage" type="NULL"/>
+  <attribute name="lastModifiedDate" type="LONG">1568229979202</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
   <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
   <attribute name="selectionState" type="INTEGER">2</attribute>
@@ -227,14 +227,6 @@
         <value type="INTEGER">2</value>
       </item>
       <item>
-        <key type="STRING">lastRunTime</key>
-        <value type="LONG">0</value>
-      </item>
-      <item>
-        <key type="STRING">lastScheduledTime</key>
-        <value type="LONG">0</value>
-      </item>
-      <item>
         <key type="STRING">count</key>
         <value type="INTEGER">1</value>
       </item>
@@ -252,7 +244,7 @@
       </item>
       <item>
         <key type="STRING">isCluster</key>
-        <value type="BOOLEAN">true</value>
+        <value type="BOOLEAN">false</value>
       </item>
     </attribute>
     <attribute name="conditionType" type="STRING">TIMER</attribute>
@@ -261,7 +253,7 @@
     <attribute name="creatorUserName" type="STRING">admin</attribute>
     <attribute name="enabled" type="BOOLEAN">false</attribute>
     <attribute name="isChildTrigger" type="BOOLEAN">true</attribute>
-    <attribute name="lastModifiedDate" type="LONG">1561141510043</attribute>
+    <attribute name="lastModifiedDate" type="LONG">1568229979202</attribute>
     <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
     <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
   </trigger>

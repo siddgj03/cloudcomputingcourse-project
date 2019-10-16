@@ -1,10 +1,10 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:2ebc2e58-1d9b-4e73-8043-4f454a678e12 -->
+<!-- salt:668265b4-70c0-4e2f-aded-db5b945413ad -->
 <metadata name="ds_orders" path="/shared/examples/ds_orders" type="DATA_SOURCE" subtype="RELATIONAL" changeToken="-8363706973618700287">
   <annotation/>
   <security>
     <owner user="admin" domain="composite"/>
-    <privilege group="all" domain="composite" privileges="READ EXECUTE SELECT"/>
+    <privilege group="all" domain="composite" privileges="NONE"/>
   </security>
   <dependency target="/shared/examples/ds_orders/tutorial/cache_status" type="TABLE">
     <datatype name="Tree" type="TREE" refId="1"></datatype>
@@ -44,7 +44,7 @@
   <attribute name="execTimeout" type="INTEGER">0</attribute>
   <attribute name="healthmonitortable" type="STRING"/>
   <attribute name="isPassThrough" type="STRING">Disabled</attribute>
-  <attribute name="lastModifiedDate" type="LONG">1561142947683</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1568229979202</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
   <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
   <attribute name="login" type="STRING">tutorial</attribute>
@@ -54,7 +54,7 @@
   <attribute name="minTargetToSourceRatioForSJ" type="STRING"/>
   <attribute name="name" type="STRING">ds_orders</attribute>
   <attribute name="nativeDataLoadingEnabled" type="BOOLEAN">true</attribute>
-  <attribute name="password" type="PASSWORD_STRING">ENC(E0UyVNh+NTnznST30A3jfQ==$REqhOu78myeei5WRL1YAqQ==)</attribute>
+  <attribute name="password" type="PASSWORD_STRING">ENC(3SKzVpBPOOpbEwx4RdDGPw==$SbzHi1I6HM1EJf5oUKPZbA==)</attribute>
   <attribute name="patternSeparator" type="STRING">,</attribute>
   <attribute name="persistPassword" type="BOOLEAN">true</attribute>
   <attribute name="postgresqlEnableBulkLoad" type="BOOLEAN">true</attribute>
@@ -68,9 +68,9 @@
   <attribute name="topicName" type="STRING"/>
   <attribute name="txnIsolationLevel" type="STRING">Read Committed</attribute>
   <attribute name="type" type="STRING">PostgreSQL</attribute>
-  <attribute name="url" type="STRING">jdbc:postgresql://localhost:9438/orders</attribute>
+  <attribute name="url" type="STRING">jdbc:postgresql://localhost:9488/orders</attribute>
   <attribute name="urlDatabaseName" type="STRING">orders</attribute>
   <attribute name="urlIP" type="STRING">localhost</attribute>
   <attribute name="urlPatternStr" type="STRING">jdbc:postgresql://&lt;HOST&gt;:&lt;PORT&gt;/&lt;DATABASE_NAME&gt;</attribute>
-  <attribute name="urlPort" type="INTEGER">9438</attribute>
+  <attribute name="urlPort" type="INTEGER">9488</attribute>
 </metadata>
