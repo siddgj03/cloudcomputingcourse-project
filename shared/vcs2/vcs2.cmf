@@ -1,0 +1,17 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:fcd34b58-5b4b-4ac3-971d-d21b57b86d1d -->
+<metadata name="vcs2" path="/shared/vcs2" type="CONTAINER" subtype="FOLDER" changeToken="0">
+  <security>
+    <owner user="sid" domain="composite"/>
+    <privilege user="sid" domain="composite" privileges="READ WRITE"/>
+  </security>
+  <attribute name="creationDate" type="LONG">1571429913396</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">50102</attribute>
+  <attribute name="creatorUserName" type="STRING">sid</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1571429913396</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">50102</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">sid</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1571429913396</attribute>
+</metadata>
