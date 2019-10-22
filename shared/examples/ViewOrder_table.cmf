@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:c3f45069-3d38-4e2c-a204-c8c3043c694a -->
+<!-- salt:7d39528c-ca89-49a9-b683-a7dd4209ae47 -->
 <metadata name="ViewOrder" path="/shared/examples/ViewOrder" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="NONE">
   <columns>
     <column name="OrderID" nullable="true">
@@ -197,7 +197,7 @@ FROM
   <attribute name="creatorUserDomain" type="STRING"/>
   <attribute name="creatorUserName" type="STRING"/>
   <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
-  <attribute name="lastModifiedDate" type="LONG">1401221465456</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1571708124987</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
   <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
   <attribute name="model" type="BYTE_ARRAY">EIEJBAAAAAUQUQYBAAYAbwByAGQAZQByAHMGAgAGAG8AcgBkAGUAcgBzAwv/////Awr/////Awz/
